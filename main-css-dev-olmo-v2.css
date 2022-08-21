@@ -1,3 +1,43 @@
-.classunia {
-    nie wiem
+/* For all */ 
+* {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    border: 10px solid black;
+    background-color: blue;
+    align-items: center;
+}
+/* -------------------------------------------------------------------------------------- */ 
+
+/*                                                                        General classes */ 
+
+.center-withflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-darkcolorbold {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.a-nodecoration {
+    text-decoration: none;
+}
+
+.a-borderbottom {
+    border-bottom: 1px;
+    color: #6c757d;
+}
+
+/* -------------------------------------------------------------------------------------- */ 
+
+/*                                                                        Header classes */ 
 }
