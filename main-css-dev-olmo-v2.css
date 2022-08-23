@@ -1,20 +1,26 @@
-/* For all */ 
+/* For all */
 * {
     padding: 0;
     margin: 0;
     height: 100%;
 }
 
+
 .body-container {
     display: flex;
     flex-direction: column;
-    border: 10px solid black;
-    background-color: blue;
+    height: 500%;
+    font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #6c757d;
+    line-height: 1.6666;
+    font-weight: 400;
+    background-color: #fbfbfd;
     align-items: center;
 }
-/* -------------------------------------------------------------------------------------- */ 
 
-/*                                                                        General classes */ 
+/* -------------------------------------------------------------------------------------- */
+
+/*                                                                        General classes */
 
 .center-withflex {
     display: flex;
@@ -22,22 +28,282 @@
     justify-content: center;
 }
 
-.a-darkcolorbold {
+.a-dark-color-bold {
     text-decoration: none;
     color: #2c3e50;
     font-weight: bold;
 }
 
-.a-nodecoration {
+.a-no-decoration {
     text-decoration: none;
 }
 
-.a-borderbottom {
+.a-border-bottom {
     border-bottom: 1px;
     color: #6c757d;
 }
 
-/* -------------------------------------------------------------------------------------- */ 
 
-/*                                                                        Header classes */ 
+.bold {
+    font-weight: bold;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+/*                                                                        Header classes */
+.header-container {
+    display: flex;
+    background-color: blueviolet;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid pink;
+    ;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0%;
+}
+
+.header-logo {
+    background-color: hsl(50, 100%, 50%);
+    width: 30%;
+}
+
+.header-img {
+    max-height: 38px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(191, 9, 9);
+    width: 70%;
+}
+
+.headerul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #578bb0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    /*tu traktuje mi kod li i a href w li osobno. Zrobić po prostu rozwijalne menu."  */
+}
+
+
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+    border: 0px;
+    color: #fff !important;
+    background-color: #0195ff !important;
+    border-color: #0195ff !important;
+    width: 160px;
+    height: 40px;
+    font-size: 1rem;
+    line-height: 60px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.headermenuimg {
+    height: 10px;
+    width: 10px;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/*                                                                        Main classes */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+    width: 100%;
+    margin-top: 140px;
+}
+
+.between-header-and-main-container {
+    background-color: tomato;
+    width: 100%;
+}
+
+/* nie użyty na razie */
+
+.main-container-places-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background-color: green;
+    border: 0.5px dotted yellow;
+}
+
+.main-container-places-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: green;
+    border: 0.5px dotted yellow;
+}
+
+/*                                                 i tak jak kuba napisał zrobic headery w divach coby zmieniac ich wielkosci tekstu. klasy headerów pierwszych tu*/
+
+.h1-font-size {
+    font-size: 3.375rem;
+    text-align: center;
+}
+
+.h2-font-size-first {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.h2-font-size-second {
+    font-size: 2.625rem;
+    text-align: center;
+}
+
+.main-prices-container-place-and-width-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: green;
+    border: 0.5px dotted yellow;
+}
+
+.main-price-1-window-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33rem;
+    width: 25rem;
+}
+
+.main-price-windows-look {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.2px solid hsl(0, 8%, 93%);
+    border-radius: 1rem;
+    background-color: #fff !important;
+    box-shadow: 10px 10px 8px #e6e6e8;
+    height: 95%;
+    width: 95%;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    }
+
+.table-offer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+th {
+    border-bottom: 1px solid hsl(0, 0%, 0%);
+    font-weight: bold;
+    color: black;
+}
+
+td {
+    border-bottom: 1px solid hsl(0, 4%, 82%);
+    height: 3rem;
+    color: black;
+}
+
+.center p {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.center img {
+    height: 20px;
+}
+
+
+.main-p-under-table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.main-p-under-table-font {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.125rem;
+    width: 65%;
+    text-align: center;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------- */
+/*                                                                        Footer classes */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    width: 100%;
+}
+
+.footer-container-places-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: rgb(63, 70, 63);
+    border: 0.5px dotted yellow;
+}
+
+.footer-container-places-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: rgb(63, 70, 63);
+    border: 0.5px dotted yellow;
+}
+
+
+
+/* -------------------------------------------------------------------------------------- */
+
+/*                                                                        Test space*/
+
+
+.klocektest {
+    height: 2000%;
+}
+
+
+.klocektest3 {
+    background-color: hsl(253, 100%, 50%);
+    width: 70%;
+    border: 3px solid pink;
 }
