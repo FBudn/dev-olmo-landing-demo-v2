@@ -17,10 +17,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .body-container {
-        background-color: rgb(34, 0, 128);
-        height: 500%;
-    }
+ 
 
     /*                                                                          Header classes */
 
@@ -50,11 +47,9 @@
 
 @media screen and (max-width: 426px) {
 
-    .body-container {
-        background-color: green;
-        height: 500%;
-    }
+    
 
+  
     /* ----------------------------------------------------------------------------------------------- */
     /*                                                                                 Header classes */
 
@@ -86,8 +81,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: green;
-        border: 0.5px dotted yellow;
+   
+        width: 95%;
     }
 
     .main-container-places-column {
@@ -95,8 +90,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: green;
-        border: 0.5px dotted yellow;
+
+        width: 95%;
     }
 
     .main-prices-container-place-and-width-row {
@@ -124,6 +119,10 @@
         box-shadow: 10px 10px 8px #e6e6e8;
     }
 
+    .h2-under-prices-section-container {
+        height: 5rem;
+    }
+
     table {
         border-collapse: collapse;
         width: 100%;
@@ -139,18 +138,144 @@
     }
 
     .main-p-under-table-font {
-        width: 110%;
+        width: 105%;
         font-size: 0.9375rem;
     }
 
+    /* PAYMENT METODS SECTION */
+
+    .main-container-places-row-space-between {
+        flex-direction: column;
+        gap: 2rem;
+        width: 95%;
+    }
+
+    .main-payment-metods {
+        align-items: center;
+    }
+
+    .main-money-guarantee-SSL-first-text-width {
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+        }
+    .main-money-guarantee-SSL-first-text-width p{
+        text-align: center;
+        width: 100%;
+        font-size: 0.9375rem;
+    }
+    .main-money-guarantee-SSL-first-text-width h3 {
+       text-align: center;
+    }
+
+    .main-money-guarantee-SSL-second-text  {
+        width: 100%;
+        align-items: center;
+    }
+
+    .main-money-guarantee-SSL-second-text  p {
+        text-align: center;
+        width: 95%;
+        font-size: 0.9375rem;
+    }
+
+    .main-money-guarantee-SSL-second-text  h3 {
+        text-align: center;
+    }
+ 
+
+    /* FREE TRAIL SECTION   */
 
 
+    .main-container-row-for-trail {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+
+    .main-trail-container-heigh-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30rem;
+    }
+
+    .main-trail-div-width-header-and-buttons-look {
+        flex-direction: column;
+        height: 20rem;
+        align-items: center;
+        
+    }
+
+    .main-header-and-button-div-inside-div-for-look {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-trail-header-flex {
+        width: 70%;
+        text-align: center;
+        font-size: 1.55rem;
+    }
+    
+    /* GOT QUESTIONS? SECTION */
 
 
+    .h1-font-size center-withflex {
+        font-size: 1.625rem;
+    }
 
+    .main-first-h4-font-size {
+        font-size: 1rem;
+        width: 100%;
 
+    }
 
+    /* "FAQ" SECTION */
+    
 
+    .faq-height-and-flex-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 1rem;
+        flex-direction: column;
+        height: 80rem;
+        
+    }
+
+    .faq-column-container {
+        height: 100%;
+    }
+
+    .faq-div-container-for-header-and-p {
+        gap: 1rem;
+        height: 100%;
+    }
+
+    .faq-h5 {
+        font-size: 1.125rem;
+    }
+
+    .faq-p {
+        font-size: 1rem;
+    }
+
+    .faq-p-list {
+        height: auto;
+        top: 0;
+    }
+
+    /* LAST HEADER SECTION  */
+
+    .last-header-section-container {
+        gap: 0;
+        height: 10rem ;
+        flex-direction: column;
+    }
+    .last-header-section-font-size {
+        font-size: 1.125rem;
+    }
+   
 
      /* ----------------------------------------------------------------------------------------------- */
 
@@ -167,8 +292,7 @@
         justify-content: center;
         align-items: center;
         min-width: 90%;
-        background-color: rgb(63, 70, 63);
-        border: 0.5px dotted yellow;
+ 
     }
 
     .footer-container-places-column {
@@ -176,7 +300,43 @@
         flex-direction: column;
         align-items: center;
         min-width: 90%;
-        background-color: rgb(63, 70, 63);
-        border: 0.5px dotted yellow;
+
     }
+    
+
+    /* FOOTER HEADER SECTION */ 
+    
+    .footer-header-size-container {
+        height: 15rem;
+    }
+
+    .footer-header-container {
+        width: 100%;
+    }
+
+    .footer-h4 {
+        font-size: 1rem;
+        width: 100%;
+    }
+    /* FOOTER OPINIONS SECTION */ 
+
+      /* FOOTER MENU SECTION */ 
+    .footer-menu-container {
+        flex-direction: column;
+    }
+
+    .footer-menu-logo-with-text-container {
+        width: 100%;
+    }
+
+
+    /* FOOTER SM SECTION */ 
+
+    .footer-social-media-sectrion-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }
+
+
