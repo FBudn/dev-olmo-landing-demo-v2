@@ -1,717 +1,905 @@
                                                                         /*min-width 992px to max-width 1199.95px classes */
                                                                         /* ONLY THIS  */
-@media (min-width: 768px) and (max-width: 1199.95px) {
-    .h1-font-size {
-        font-size: 2.8rem;
-    }
+                                                                        @media (min-width: 768px) and (max-width: 1199.95px) {
+                                                                            .h1-font-size {
+                                                                                font-size: 2.8rem;
+                                                                            }
 
-    .h2-font-size-first {
-        min-height: 1.1rem;
-    }
+                                                                            .h2-font-size-first {
+                                                                                min-height: 1.1rem;
+                                                                            }
+
+                                                                        }
 
-}
+                                                                        /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+                                                                        /*                                                                        MAX-WIDTH  768px  CLASSES                                                                               */
+
+                                                                        /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+                                                                        @media screen and (max-width: 768px) {
 
-/*                                                                        MAX-WIDTH  768px  CLASSES                                                                               */
 
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+                                                                            /* ----------------------------------------------------------------------------------------------- */
+                                                                            /*                                                                                 Header classes */
+                                                                            /*  RESPONSYWNE MENU TESTY START  */
+
+                                                                            .burger {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+                                                                                justify-content: center;
+                                                                                background: transparent;
+                                                                                height: 40px;
+                                                                                cursor: pointer;
+                                                                                border: none;
+                                                                            }
+
+
+
+
+                                                                            .burger.active {
+                                                                                transform: translateX(-350px);
+                                                                                transition: 0.3s ease-in;
+                                                                            }
+
+                                                                            .burger.active .lines:first-child {
+                                                                                position: absolute;
+                                                                                top: 8vh;
+                                                                                right: -1px;
+                                                                                height: 90vh;
+                                                                                width: 45vw;
+                                                                                background-color: rgba(0, 0, 0, 0.519);
+                                                                            }
 
 
-@media screen and (max-width: 768px) {
+                                                                            .show {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                margin-top: 15px;
+                                                                            }
+
+
+
+                                                                            .burger.active .lines:nth-child(2) {
+                                                                                transform: rotate(45deg);
+                                                                                margin-bottom: -4px;
+                                                                                width: 20px;
+                                                                                margin-left: 0px;
+                                                                                transition: 0.3s ease-in;
+                                                                                margin-right: 5px;
+                                                                            }
 
 
-    /* ----------------------------------------------------------------------------------------------- */
-    /*                                                                                 Header classes */
-    /*
-                               N
-                                O
-                                 N
-                                  E
-    */
-    /* ----------------------------------------------------------------------------------------------- */
-    /* ----------------------------------------------------------------                    Main classes */
+                                                                            .burger.active .lines:nth-child(3) {
+                                                                                transform: rotate(135deg);
+                                                                                bottom: 5px;
+                                                                                transition: 0.3s ease-in;
+                                                                                margin-right: 5px;
+                                                                            }
 
+                                                                            .headerul {
+                                                                                position: absolute;
+                                                                                right: 0;
+                                                                                top: 0px;
+                                                                                overflow: scroll;
+                                                                                height: 100vh;
+                                                                                flex-direction: column;
+                                                                                text-align: center;
+                                                                                transform: translate(100%);
+                                                                                transition: 0.3s ease-in;
+                                                                                justify-content: flex-start;
+                                                                                background-color: #fff;
+                                                                                border: 3px solid hsl(0, 8%, 93%);
+                                                                                width: 55vw;
+                                                                                gap: 0;
+                                                                                margin-block-start: 0;
+                                                                                margin-block-end: 0;
+                                                                                padding-inline-start: 0;
 
+                                                                            }
 
+                                                                            .active {
+                                                                                transform: translate(0%);
+                                                                            }
 
-    .h1-font-size {
-        font-size: 2.55rem;
-    }
+                                                                            .disapear {
+                                                                                transform: translateX(-250px);
+                                                                                transition: 0.3s ease-in;
+                                                                            }
 
-    .h2-font-size-first {
-        font-size: 1.05rem;
-    }
 
-    .h2-font-size-second {
-        font-size: 2rem;
-    }
+                                                                            .header-nav>ul>li {
+                                                                                width: 100%;
+                                                                                display: grid;
+                                                                                justify-content: flex-start;
+                                                                                border-bottom: 3px solid hsl(0, 8%, 93%);
+                                                                                position: relative;
 
-    /* PRICE OFFER SECTRION */
-    .main-price-windows-look {
-        padding: 0.2rem;
-    }
+                                                                            }
 
-    .main-prices-container-place-and-width-row {
-        gap: 1rem;
-    }
+                                                                            .header-nav>ul>li>a {
+                                                                                display: flex;
+                                                                                justify-content: flex-start;
+                                                                                width: 100%;
+                                                                                padding-left: 1rem;
+                                                                                padding-bottom: 2rem;
 
-    .abonament-and-discount-space-beetween {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 1rem;
-    }
+                                                                            }
 
+                                                                            .header-nav>ul>li>img {
+                                                                                display: flex;
+                                                                                margin-left: 25rem;
+                                                                                margin-top: -6rem;
+                                                                            }
 
-    .price-dollar-month-row-flex {
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-    }
+                                                                            .header-button {
+                                                                                width: 100%;
+                                                                                justify-content: flex-start;
+                                                                                height: 4rem;
+                                                                                border-radius: 0rem;
+                                                                                padding-left: 0.8rem;
+                                                                            }
 
-    .abonament-font {
-        font-size: 1.15rem;
-    }
 
-    .discount-look {
-        height: 1rem;
-        width: 5rem;
-        align-items: center;
-    }
+                                                                            /*  RESPONSYWNE MENU TESTY STOP  */
 
-    .discount-look-popular {
-        height: 1rem;
-        width: 5rem;
-        align-items: center;
-    }
 
-    .price-dolar-font {
-        font-size: 2.1rem;
-    }
+                                                                            /*  DROP-DOWN-MENU START  */
+                                                                            .dropdown-content:after {
+                                                                                display: none;
+                                                                            }
 
-    .price-month-font {
-        font-size: 1rem;
-        padding-top: 2rem;
-    }
 
-    /* THIRD MAIN HEADER */
+                                                                            .dropdown-content {
+                                                                                position: static;
+                                                                                width: 100%;
+                                                                                border-radius: 0rem;
+                                                                                border-bottom: none;
+                                                                                border-right: none;
+                                                                                border-left: none;
+                                                                                margin-top: 0px;
+                                                                                height: 100%;
 
-    .main-p-under-table-container {
-        width: 100%;
-    }
+                                                                            }
 
-    .main-p-under-table-font {
-        font-size: 1rem;
-        width: 100%;
-    }
-
-    /* PAYMENT METODS SECTION   */
-
-    .main-container-places-row-space-between {
-        gap: 0rem;
-        justify-content: center;
-        width: 95%;
-    }
-
-    .main-payment-metods {
-        width: 100%;
-    }
-
-    .main-payment-h3-bold {
-        font-size: 1.07rem;
-        width: 110%;
-    }
-
-    .bold-and-font-size {
-        font-size: 1.07rem;
-        width: 100%;
-    }
-
-    .main-payment-images-container {
-        gap: 0.4rem;
-    }
 
-    .main-payment-images-size {
-        display: flex;
-        height: 2rem;
-        width: 2rem;
-    }
 
-    .main-money-guarantee-SSL-p-font-size {
-        font-size: 0.95rem;
-    }
+                                                                            .row {
+                                                                                flex-direction: column;
+                                                                                overflow: scroll;
+                                                                                gap: 0rem;
+                                                                                display: block;
+                                                                            }
 
-    .main-money-guarantee-SSL-first-text-width {
-        width: 50%;
-    }
+                                                                            .column {
+                                                                                overflow: scroll;
+                                                                                display: block;
+                                                                            }
 
-    .main-money-guarantee-SSL-second-text {
-        width: 50%;
-    }
+                                                                            .column>a {
+                                                                                margin: 1rem;
+                                                                            }
 
-    /* FREE TRAIL SECTION   */
 
-    .main-trail-container-heigh-flex {
-        height: 30rem;
-    }
+                                                                            /*  DROP-DOWN-MENU STOP  */
 
-    .main-trail-div-width-header-and-buttons-look {
-        height: 20rem;
-    }
 
-    .main-header-and-button-div-inside-div-for-look {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
 
-    .main-trail-header-font-size {
-        font-size: 1.8rem;
-        text-align: center;
-        width: 90%;
-    }
 
 
 
-    /* GOT QUESTIONS? SECTION */
+                                                                            /* ----------------------------------------------------------------------------------------------- */
+                                                                            /* ----------------------------------------------------------------                    Main classes */
 
-    .main-first-h4-font-size {
-        font-size: 1.05rem;
-        width: 85%;
-    }
 
-    /* FAQ SECTION */
 
-    .faq-height-and-flex-container {
-        margin-top: 2rem;
-        flex-direction: column;
-        height: 60rem;
-        gap: 0;
-    }
 
-    .faq-column-container {
-        height: 100%;
-        justify-content: flex-start;
-    }
+                                                                            .h1-font-size {
+                                                                                font-size: 2.55rem;
+                                                                            }
 
-    .faq-div-container-for-header-and-p {
-        gap: 1rem;
-    }
+                                                                            .h2-font-size-first {
+                                                                                font-size: 1.05rem;
+                                                                            }
 
-    .faq-h5 {
-        font-size: 1.175rem;
-        width: 100%;
-    }
+                                                                            .h2-font-size-second {
+                                                                                font-size: 2rem;
+                                                                            }
 
-    .faq-p {
-        font-size: 1.05rem;
-        width: 95%;
-        margin-bottom: 1rem;
-    }
+                                                                            /* PRICE OFFER SECTRION */
+                                                                            .main-price-windows-look {
+                                                                                padding: 0.2rem;
+                                                                            }
 
-    .faq-p-list {
-        height: auto;
-        top: 0;
-    }
+                                                                            .main-prices-container-place-and-width-row {
+                                                                                gap: 1rem;
+                                                                            }
 
-    /* LAST HEADER SECTION */
+                                                                            .abonament-and-discount-space-beetween {
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                                width: 100%;
+                                                                                gap: 1rem;
+                                                                            }
 
-    .last-header-section-font-size1 {
-        font-size: 1.175rem;
-    }
 
-    .last-header-section-font-size2 {
-        font-size: 1.175rem;
-    }
+                                                                            .price-dollar-month-row-flex {
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                                gap: 0.5rem;
+                                                                            }
 
-    /* ----------------------------------------------------------------------------------------------- */
+                                                                            .abonament-font {
+                                                                                font-size: 1.15rem;
+                                                                            }
 
-    /*                                                                                  Footer classes */
+                                                                            .discount-look {
+                                                                                height: 1rem;
+                                                                                width: 5rem;
+                                                                                align-items: center;
+                                                                            }
 
+                                                                            .discount-look-popular {
+                                                                                height: 1rem;
+                                                                                width: 5rem;
+                                                                                align-items: center;
+                                                                            }
 
+                                                                            .price-dolar-font {
+                                                                                font-size: 2.1rem;
+                                                                            }
 
+                                                                            .price-month-font {
+                                                                                font-size: 1rem;
+                                                                                padding-top: 2rem;
+                                                                            }
 
-    /* FOOTER HEADER SECTION */
+                                                                            /* THIRD MAIN HEADER */
 
-    .footer-header-container {
-        width: 90%;
-    }
+                                                                            .main-p-under-table-container {
+                                                                                width: 100%;
+                                                                            }
 
+                                                                            .main-p-under-table-font {
+                                                                                font-size: 1rem;
+                                                                                width: 100%;
+                                                                            }
 
-    .footer-h4 {
-        font-size: 1.05rem;
-    }
+                                                                            /* PAYMENT METODS SECTION   */
 
+                                                                            .main-container-places-row-space-between {
+                                                                                gap: 0rem;
+                                                                                justify-content: center;
+                                                                                width: 95%;
+                                                                            }
 
-    /* FOOTER MENU SECTION */
-    .footer-menu-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
+                                                                            .main-payment-metods {
+                                                                                width: 100%;
+                                                                            }
 
-    .footer-menu-logo-with-text-container {
-        width: 100%;
-    }
+                                                                            .main-payment-h3-bold {
+                                                                                font-size: 1.07rem;
+                                                                                width: 110%;
+                                                                            }
 
+                                                                            .bold-and-font-size {
+                                                                                font-size: 1.07rem;
+                                                                                width: 100%;
+                                                                            }
 
-    .footer-for-mobile-container1 {
+                                                                            .main-payment-images-container {
+                                                                                gap: 0.4rem;
+                                                                            }
 
-        width: 100%;
-        justify-content: flex-start;
-        gap: 4rem;
-        align-items: center;
-        width: 100%;
-    }
+                                                                            .main-payment-images-size {
+                                                                                display: flex;
+                                                                                height: 2rem;
+                                                                                width: 2rem;
+                                                                            }
 
-    .footer-for-mobile-container0 {
-        display: flex;
-        gap: 1rem;
-    }
+                                                                            .main-money-guarantee-SSL-p-font-size {
+                                                                                font-size: 0.95rem;
+                                                                            }
 
-    .footer-for-mobile-container2 {
+                                                                            .main-money-guarantee-SSL-first-text-width {
+                                                                                width: 50%;
+                                                                            }
 
-        width: 100%;
-        justify-content: flex-start;
-        gap: 4rem;
-        width: 100%;
-        height: 100%;
-    }
+                                                                            .main-money-guarantee-SSL-second-text {
+                                                                                width: 50%;
+                                                                            }
 
-    .footer-text-under-logo-font {
-        font-size: 1.05rem;
-        width: 85%;
-    }
+                                                                            /* FREE TRAIL SECTION   */
 
+                                                                            .main-trail-container-heigh-flex {
+                                                                                height: 30rem;
+                                                                            }
 
-}
+                                                                            .main-trail-div-width-header-and-buttons-look {
+                                                                                height: 20rem;
+                                                                            }
 
+                                                                            .main-header-and-button-div-inside-div-for-look {
+                                                                                flex-direction: column;
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                                gap: 1rem;
+                                                                            }
 
+                                                                            .main-trail-header-font-size {
+                                                                                font-size: 1.8rem;
+                                                                                text-align: center;
+                                                                                width: 90%;
+                                                                            }
 
 
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-/*                                                                        MAX-WIDTH  426PX  CLASSES                                                                               */
+                                                                            /* GOT QUESTIONS? SECTION */
 
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+                                                                            .main-first-h4-font-size {
+                                                                                font-size: 1.05rem;
+                                                                                width: 85%;
+                                                                            }
 
+                                                                            /* FAQ SECTION */
 
+                                                                            .faq-height-and-flex-container {
+                                                                                margin-top: 2rem;
+                                                                                flex-direction: column;
+                                                                                height: 60rem;
+                                                                                gap: 0;
+                                                                            }
 
-@media screen and (max-width: 426px) {
+                                                                            .faq-column-container {
+                                                                                height: 100%;
+                                                                                justify-content: flex-start;
+                                                                            }
 
+                                                                            .faq-div-container-for-header-and-p {
+                                                                                gap: 1rem;
+                                                                            }
 
+                                                                            .faq-h5 {
+                                                                                font-size: 1.175rem;
+                                                                                width: 100%;
+                                                                            }
 
+                                                                            .faq-p {
+                                                                                font-size: 1.05rem;
+                                                                                width: 95%;
+                                                                                margin-bottom: 1rem;
+                                                                            }
 
-    /* ----------------------------------------------------------------------------------------------- */
-    /*                                                                                 Header classes */
+                                                                            .faq-p-list {
+                                                                                height: auto;
+                                                                                top: 0;
+                                                                            }
 
-    .header-container {
-        justify-content: space-between;
-    }
+                                                                            /* LAST HEADER SECTION */
 
-    .header-logo {
-        width: 20%;
-    }
+                                                                            .last-header-section-font-size1 {
+                                                                                font-size: 1.175rem;
+                                                                            }
 
+                                                                            .last-header-section-font-size2 {
+                                                                                font-size: 1.175rem;
+                                                                            }
 
-    .header-nav {
-        width: 20%;
-    }
+                                                                            /* ----------------------------------------------------------------------------------------------- */
 
+                                                                            /*                                                                                  Footer classes */
 
 
-    /* ----------------------------------------------------------------------------------------------- */
-    /* ----------------------------------------------------------------                    Main classes */
 
-    .h1-font-size {
-        font-size: 1.625rem;
-    }
 
-    .h2-font-size-first {
-        font-size: 1rem;
-    }
+                                                                            /* FOOTER HEADER SECTION */
 
-    .h2-font-size-second {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-    }
+                                                                            .footer-header-container {
+                                                                                width: 90%;
+                                                                            }
 
-    .main-container {
-        width: 100%;
-        height: 100%;
-    }
 
-    .main-container-places-row {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 95%;
-    }
+                                                                            .footer-h4 {
+                                                                                font-size: 1.05rem;
+                                                                            }
 
-    .main-container-places-column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 95%;
-    }
 
-    .main-prices-container-place-and-width-row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        gap: 4rem;
-    }
+                                                                            /* FOOTER MENU SECTION */
+                                                                            .footer-menu-container {
+                                                                                flex-direction: column;
+                                                                                gap: 1rem;
+                                                                            }
 
-    .main-price-1-window-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35rem;
-        width: 25rem;
-    }
+                                                                            .footer-menu-logo-with-text-container {
+                                                                                width: 100%;
+                                                                            }
 
-    .main-price-windows-look {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 0.2px solid hsl(0, 8%, 93%);
-        border-radius: 1rem;
-        background-color: #fff !important;
-        box-shadow: 10px 10px 8px #e6e6e8;
-    }
 
-    .cost-per-month-flex-start {
-        align-items: center;
-    }
+                                                                            .footer-for-mobile-container1 {
 
-    .price-dollar-month-row-flex {
-        justify-content: center;
-    }
+                                                                                width: 100%;
+                                                                                justify-content: flex-start;
+                                                                                gap: 4rem;
+                                                                                align-items: center;
+                                                                                width: 100%;
+                                                                            }
 
-    .abonament-offer-container {
-        align-items: center;
-    }
+                                                                            .footer-for-mobile-container0 {
+                                                                                display: flex;
+                                                                                gap: 1rem;
+                                                                            }
 
-    .abonament-for-button-container {
-        justify-content: center;
-    }
+                                                                            .footer-for-mobile-container2 {
 
+                                                                                width: 100%;
+                                                                                justify-content: flex-start;
+                                                                                gap: 4rem;
+                                                                                width: 100%;
+                                                                                height: 100%;
+                                                                            }
 
-    /* HEADER UNDER PRICES */
+                                                                            .footer-text-under-logo-font {
+                                                                                font-size: 1.05rem;
+                                                                                width: 85%;
+                                                                            }
 
-    .h2-under-prices-section-container {
-        height: 5rem;
-    }
 
-    /* TABLE */
+                                                                        }
 
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        height: 100%;
-    }
 
-    .table-offer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-    }
 
-    .main-p-under-table-font {
-        width: 105%;
-        font-size: 0.9375rem;
-    }
 
-    /* MAIN P UNDER TABLE */
+                                                                        /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-    .main-p-under-table-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 3rem;
-    }
+                                                                        /*                                                                        MAX-WIDTH  426PX  CLASSES                                                                               */
 
-    .main-p-under-table-font {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 0.9375rem;
-        width: 85%;
-        text-align: center;
-    }
+                                                                        /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-    /* PAYMENT METODS SECTION */
 
-    .main-container-places-row-space-between {
-        flex-direction: column;
-        gap: 2rem;
-        width: 95%;
-    }
 
-    .abonament-and-discount-space-beetween {
-        justify-content: space-around;
-    }
+                                                                        @media screen and (max-width: 426px) {
 
-    .main-payment-metods {
-        align-items: center;
-    }
 
-    .main-payment-h3-bold {
-        font-size: 1.07rem;
-        width: 100%;
-        text-align: center;
-    }
 
-    .main-money-guarantee-SSL-first-text-width {
-        width: 100%;
-        align-items: center;
-        margin-left: 0;
-    }
 
-    .main-money-guarantee-SSL-first-text-width p {
-        text-align: center;
-        width: 95%;
-        font-size: 0.9375rem;
-    }
+                                                                            /* ----------------------------------------------------------------------------------------------- */
+                                                                            /*                                                                                 Header classes */
 
-    .main-money-guarantee-SSL-first-text-width h3 {
-        text-align: center;
-    }
+                                                                            .header-container {
+                                                                                justify-content: space-between;
+                                                                            }
 
-    .main-money-guarantee-SSL-second-text {
-        width: 100%;
-        align-items: center;
-    }
+                                                                            .header-logo {
+                                                                                width: 20%;
+                                                                                margin-left: 1rem;
+                                                                            }
 
-    .main-money-guarantee-SSL-second-text p {
-        text-align: center;
-        width: 90%;
-        font-size: 0.9375rem;
-    }
 
-    .main-money-guarantee-SSL-second-text h3 {
-        text-align: center;
-    }
+                                                                            .header-nav {
+                                                                                width: 20%;
+                                                                            }
 
-    .price-dolar-font {
-        font-size: 2.85rem;
-    }
+                                                                            .row {
+                                                                                flex-direction: column;
+                                                                            }
 
-    .price-month-font {
-        font-size: 1.25rem;
-    }
 
-    .main-payment-images-container {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 0.8rem;
-    }
+                                                                            /*  RESPONSIVE START  */
+                                                                            .burger.active .lines:first-child {
+                                                                                position: absolute;
+                                                                                top: 8vh;
+                                                                                right: -6px;
+                                                                                height: 90vh;
+                                                                                width: 45vw;
+                                                                                background-color: rgba(0, 0, 0, 0.519);
+                                                                            }
 
-    .main-payment-images-size {
-        display: flex;
-        height: 3rem;
-        width: 3rem;
-    }
+                                                                            .headerul {
+                                                                                width: 90vw;
+                                                                            }
 
-    /* FREE TRAIL SECTION   */
+                                                                            .header-nav>ul>li>img {
+                                                                                margin-left: 23rem;
+                                                                            }
 
 
-    .main-container-row-for-trail {
-        flex-direction: column;
-        align-items: center;
-        width: 95%;
-    }
 
-    .main-trail-container-heigh-flex {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 30rem;
-    }
+                                                                            /*  RESPONSIVE STOP  */
 
-    .main-trail-div-width-header-and-buttons-look {
-        flex-direction: column;
-        height: 20rem;
-        align-items: center;
 
-    }
+                                                                            /* ----------------------------------------------------------------------------------------------- */
+                                                                            /* ----------------------------------------------------------------                    Main classes */
 
-    .main-header-and-button-div-inside-div-for-look {
-        flex-direction: column;
-        align-items: center;
-    }
+                                                                            .h1-font-size {
+                                                                                font-size: 1.625rem;
+                                                                            }
 
-    .main-trail-header-flex {
-        width: 70%;
-        text-align: center;
-        font-size: 1.55rem;
-    }
+                                                                            .h2-font-size-first {
+                                                                                font-size: 1rem;
+                                                                            }
 
-    /* GOT QUESTIONS? SECTION */
+                                                                            .h2-font-size-second {
+                                                                                font-size: 1.5rem;
+                                                                                margin-bottom: 2rem;
+                                                                            }
 
+                                                                            .main-container {
+                                                                                width: 100%;
+                                                                                height: 100%;
+                                                                            }
 
-    .h1-font-size center-withflex {
-        font-size: 1.625rem;
-    }
+                                                                            .main-container-places-row {
+                                                                                display: flex;
+                                                                                justify-content: space-around;
+                                                                                align-items: center;
+                                                                                width: 95%;
+                                                                            }
 
-    .main-first-h4-font-size {
-        font-size: 1rem;
-        width: 100%;
+                                                                            .main-container-places-column {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+                                                                                justify-content: center;
+                                                                                width: 95%;
+                                                                            }
 
-    }
+                                                                            .main-prices-container-place-and-width-row {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+                                                                                height: 100%;
+                                                                                gap: 4rem;
+                                                                            }
 
-    /* "FAQ" SECTION */
+                                                                            .main-price-1-window-container {
+                                                                                display: flex;
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                                height: 35rem;
+                                                                                width: 25rem;
+                                                                            }
 
+                                                                            .main-price-windows-look {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+                                                                                justify-content: center;
+                                                                                border: 0.2px solid hsl(0, 8%, 93%);
+                                                                                border-radius: 1rem;
+                                                                                background-color: #fff !important;
+                                                                                box-shadow: 10px 10px 8px #e6e6e8;
+                                                                            }
 
-    .faq-height-and-flex-container {
-        margin-top: 2rem;
-        flex-direction: column;
-        height: 60rem;
-        gap: 0;
-    }
+                                                                            .cost-per-month-flex-start {
+                                                                                align-items: center;
+                                                                            }
 
-    .faq-column-container {
-        height: 100%;
-        justify-content: flex-start;
-    }
+                                                                            .price-dollar-month-row-flex {
+                                                                                justify-content: center;
+                                                                            }
 
-    .faq-div-container-for-header-and-p {
-        gap: 1rem;
-    }
+                                                                            .abonament-offer-container {
+                                                                                align-items: center;
+                                                                            }
 
-    .faq-h5 {
-        font-size: 1.125rem;
-        width: 100%;
-    }
+                                                                            .abonament-for-button-container {
+                                                                                justify-content: center;
+                                                                            }
 
-    .faq-p {
-        font-size: 1rem;
-        width: 95%;
-        margin-bottom: 1rem;
-    }
 
-    .faq-p-list {
-        height: auto;
-        top: 0;
-        font-size: 1rem;
-    }
+                                                                            /* HEADER UNDER PRICES */
 
-    /* LAST HEADER SECTION  */
+                                                                            .h2-under-prices-section-container {
+                                                                                height: 5rem;
+                                                                            }
 
-    .last-header-section-container {
-        height: 10rem;
-        padding-top: 10rem;
-        flex-direction: column;
-        justify-content: center;
-    }
+                                                                            /* TABLE */
 
-    .last-header-section-font-size {
-        font-size: 1.125rem;
-    }
+                                                                            table {
+                                                                                border-collapse: collapse;
+                                                                                width: 100%;
+                                                                                height: 100%;
+                                                                            }
 
+                                                                            .table-offer {
+                                                                                display: flex;
+                                                                                justify-content: space-around;
+                                                                                align-items: center;
+                                                                                width: 100%;
+                                                                                height: 100vh;
+                                                                            }
 
-    /* ----------------------------------------------------------------------------------------------- */
+                                                                            .main-p-under-table-font {
+                                                                                width: 105%;
+                                                                                font-size: 0.9375rem;
+                                                                            }
 
-    /*                                                                                  Footer classes */
+                                                                            /* MAIN P UNDER TABLE */
 
-    .footer-container {
-        height: 100%;
-        width: 100%;
-    }
+                                                                            .main-p-under-table-container {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                                margin: 3rem;
+                                                                            }
 
+                                                                            .main-p-under-table-font {
+                                                                                display: flex;
+                                                                                align-items: center;
+                                                                                font-weight: 500;
+                                                                                font-size: 0.9375rem;
+                                                                                width: 85%;
+                                                                                text-align: center;
+                                                                            }
 
-    .footer-container-places-row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+                                                                            /* PAYMENT METODS SECTION */
 
-    }
+                                                                            .main-container-places-row-space-between {
+                                                                                flex-direction: column;
+                                                                                gap: 2rem;
+                                                                                width: 95%;
+                                                                            }
 
-    .footer-container-places-column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+                                                                            .abonament-and-discount-space-beetween {
+                                                                                justify-content: space-around;
+                                                                            }
 
-    }
+                                                                            .main-payment-metods {
+                                                                                align-items: center;
+                                                                            }
 
+                                                                            .main-payment-h3-bold {
+                                                                                font-size: 1.07rem;
+                                                                                width: 100%;
+                                                                                text-align: center;
+                                                                            }
 
-    /* FOOTER HEADER SECTION */
+                                                                            .main-money-guarantee-SSL-first-text-width {
+                                                                                width: 100%;
+                                                                                align-items: center;
+                                                                                margin-left: 0;
+                                                                            }
 
-    .footer-header-size-container {
-        height: 15rem;
-    }
+                                                                            .main-money-guarantee-SSL-first-text-width p {
+                                                                                text-align: center;
+                                                                                width: 95%;
+                                                                                font-size: 0.9375rem;
+                                                                            }
 
-    .footer-header-container {
-        width: 100%;
-    }
+                                                                            .main-money-guarantee-SSL-first-text-width h3 {
+                                                                                text-align: center;
+                                                                            }
 
-    .footer-h4 {
-        font-size: 1rem;
-        width: 100%;
-    }
+                                                                            .main-money-guarantee-SSL-second-text {
+                                                                                width: 100%;
+                                                                                align-items: center;
+                                                                            }
 
-    /* FOOTER OPINIONS SECTION */
+                                                                            .main-money-guarantee-SSL-second-text p {
+                                                                                text-align: center;
+                                                                                width: 90%;
+                                                                                font-size: 0.9375rem;
+                                                                            }
 
-    /* FOOTER MENU SECTION */
-    .footer-menu-container {
-        flex-direction: column;
-    }
+                                                                            .main-money-guarantee-SSL-second-text h3 {
+                                                                                text-align: center;
+                                                                            }
 
-    .footer-menu-logo-with-text-container {
-        width: 100%;
-    }
+                                                                            .price-dolar-font {
+                                                                                font-size: 2.85rem;
+                                                                            }
 
+                                                                            .price-month-font {
+                                                                                font-size: 1.25rem;
+                                                                            }
 
-    .footer-for-mobile-container1 {
+                                                                            .main-payment-images-container {
+                                                                                display: flex;
+                                                                                flex-wrap: nowrap;
+                                                                                gap: 0.8rem;
+                                                                            }
 
-        width: 100%;
-        justify-content: flex-start;
-        gap: 7rem;
-        align-items: center;
-    }
+                                                                            .main-payment-images-size {
+                                                                                display: flex;
+                                                                                height: 3rem;
+                                                                                width: 3rem;
+                                                                            }
 
-    .footer-for-mobile-container2 {
+                                                                            /* FREE TRAIL SECTION   */
 
-        width: 100%;
-        justify-content: flex-start;
-        gap: 7.7rem;
-        align-items: center;
-    }
 
-    .footer-for-mobile-container0 {
-        display: flex;
-        flex-direction: column;
-    }
+                                                                            .main-container-row-for-trail {
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+                                                                                width: 95%;
+                                                                            }
 
-    /* FOOTER SM SECTION */
+                                                                            .main-trail-container-heigh-flex {
+                                                                                flex-direction: column;
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                                height: 30rem;
+                                                                            }
 
-    .footer-social-media-sectrion-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 2rem;
-    }
+                                                                            .main-trail-div-width-header-and-buttons-look {
+                                                                                flex-direction: column;
+                                                                                height: 20rem;
+                                                                                align-items: center;
 
-    .footer-div-rigts-reserver {
-        justify-content: center;
-    }
+                                                                            }
 
-    .footer-social-media-space-around {
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 100%;
+                                                                            .main-header-and-button-div-inside-div-for-look {
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+                                                                            }
 
-    }
+                                                                            .main-trail-header-flex {
+                                                                                width: 70%;
+                                                                                text-align: center;
+                                                                                font-size: 1.55rem;
+                                                                            }
 
+                                                                            /* GOT QUESTIONS? SECTION */
 
 
-}
+                                                                            .h1-font-size center-withflex {
+                                                                                font-size: 1.625rem;
+                                                                            }
+
+                                                                            .main-first-h4-font-size {
+                                                                                font-size: 1rem;
+                                                                                width: 100%;
+
+                                                                            }
+
+                                                                            /* "FAQ" SECTION */
+
+
+                                                                            .faq-height-and-flex-container {
+                                                                                margin-top: 2rem;
+                                                                                flex-direction: column;
+                                                                                height: 60rem;
+                                                                                gap: 0;
+                                                                            }
+
+                                                                            .faq-column-container {
+                                                                                height: 100%;
+                                                                                justify-content: flex-start;
+                                                                            }
+
+                                                                            .faq-div-container-for-header-and-p {
+                                                                                gap: 1rem;
+                                                                            }
+
+                                                                            .faq-h5 {
+                                                                                font-size: 1.125rem;
+                                                                                width: 100%;
+                                                                            }
+
+                                                                            .faq-p {
+                                                                                font-size: 1rem;
+                                                                                width: 95%;
+                                                                                margin-bottom: 1rem;
+                                                                            }
+
+                                                                            .faq-p-list {
+                                                                                height: auto;
+                                                                                top: 0;
+                                                                                font-size: 1rem;
+                                                                            }
+
+                                                                            /* LAST HEADER SECTION  */
+
+                                                                            .last-header-section-container {
+                                                                                height: 10rem;
+                                                                                padding-top: 10rem;
+                                                                                flex-direction: column;
+                                                                                justify-content: center;
+                                                                            }
+
+                                                                            .last-header-section-font-size {
+                                                                                font-size: 1.125rem;
+                                                                            }
+
+
+                                                                            /* ----------------------------------------------------------------------------------------------- */
+
+                                                                            /*                                                                                  Footer classes */
+
+                                                                            .footer-container {
+                                                                                height: 100%;
+                                                                                width: 100%;
+                                                                            }
+
+
+                                                                            .footer-container-places-row {
+                                                                                display: flex;
+                                                                                justify-content: center;
+                                                                                align-items: center;
+
+                                                                            }
+
+                                                                            .footer-container-places-column {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+
+                                                                            }
+
+
+                                                                            /* FOOTER HEADER SECTION */
+
+                                                                            .footer-header-size-container {
+                                                                                height: 15rem;
+                                                                            }
+
+                                                                            .footer-header-container {
+                                                                                width: 100%;
+                                                                            }
+
+                                                                            .footer-h4 {
+                                                                                font-size: 1rem;
+                                                                                width: 100%;
+                                                                            }
+
+                                                                            /* FOOTER OPINIONS SECTION */
+
+                                                                            /* FOOTER MENU SECTION */
+                                                                            .footer-menu-container {
+                                                                                flex-direction: column;
+                                                                            }
+
+                                                                            .footer-menu-logo-with-text-container {
+                                                                                width: 100%;
+                                                                            }
+
+
+                                                                            .footer-for-mobile-container1 {
+
+                                                                                width: 100%;
+                                                                                justify-content: flex-start;
+                                                                                gap: 7rem;
+                                                                                align-items: center;
+                                                                            }
+
+                                                                            .footer-for-mobile-container2 {
+
+                                                                                width: 100%;
+                                                                                justify-content: flex-start;
+                                                                                gap: 7.7rem;
+                                                                                align-items: center;
+                                                                            }
+
+                                                                            .footer-for-mobile-container0 {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                            }
+
+                                                                            /* FOOTER SM SECTION */
+
+                                                                            .footer-social-media-sectrion-container {
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+                                                                                justify-content: center;
+                                                                                width: 100%;
+                                                                                margin-bottom: 2rem;
+                                                                            }
+
+                                                                            .footer-div-rigts-reserver {
+                                                                                justify-content: center;
+                                                                            }
+
+                                                                            .footer-social-media-space-around {
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                                width: 80%;
+                                                                                height: 100%;
+
+                                                                            }
+
+
+
+                                                                        }

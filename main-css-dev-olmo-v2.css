@@ -1,5 +1,5 @@
 /* For all */
-                                                                        /* MAIN CSS IS FOR 1140 WIDTH */
+/* MAIN CSS IS FOR 1140 WIDTH */
 * {
     padding: 0;
     margin: 0;
@@ -20,6 +20,8 @@ body {
     background-color: #fbfbfd;
     align-items: center;
 }
+
+
 
 /* -------------------------------------------------------------------------------------- */
 
@@ -129,7 +131,6 @@ header {
 li {
     display: flex;
     align-items: center;
-    /*tu traktuje mi kod li i a href w li osobno. Zrobić po prostu rozwijalne menu."  */
 }
 
 
@@ -156,6 +157,125 @@ li {
     height: 10px;
     width: 10px;
 }
+
+/* DROP-DOWN MENU */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: auto;
+    background-color: #fff !important;
+    border-bottom: 3px solid hsl(0, 8%, 93%);
+    border: 1px solid hsl(0, 8%, 93%);
+    border-radius: 1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.row {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 769px) {
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+}
+
+.cont2 {
+    color: #2c3e50;
+}
+
+.cont3 {
+
+    color: #2c3e50;
+}
+
+.drop2 {
+    color: #2c3e50;
+}
+
+.drop3 {
+    color: #2c3e50;
+}
+
+.dropdown-content a:hover {
+    color: #0195ff !important;
+}
+
+/*   BORDER-ARROW */
+
+.dropdown-content:after {
+    content: " ";
+    position: absolute;
+    left: 1rem;
+    top: -20.99px;
+    height: 9px;
+    border-style: solid;
+    border-width: 0px 12px 12px 12px;
+    border-color: transparent transparent #fff transparent;
+    filter: drop-shadow(0 0 1px rgb(239, 236, 236));
+}
+
+#new {
+    color: #ff523d;
+    font-size: 0.6rem;
+    position: relative;
+    top: -8px;
+    left: 1px;
+    display: flex;
+}
+
+.header-fixed>.header-container>.header-nav>.headerul>.dropdown>.dropdown-content>.row>.column>a {
+
+    display: flex;
+}
+
+/* RESPONSIVE MENU */
+
+.burger {
+    display: none;
+}
+
+.lines {
+    width: 20px;
+    height: 2px;
+    background-color: #6c757d;
+    margin-top: 2.5px;
+}
+
+.burger .lines:first-child {
+    width: 25px;
+    margin-left: 5px;
+}
+
+.burger .lines:nth-child(2) {
+    width: 23px;
+    margin-left: 3px;
+}
+
+/* RESPONSIVE MENU STOP */
+
 
 /* -------------------------------------------------------------------------------------- */
 
@@ -407,6 +527,7 @@ td {
     border-bottom: 1px solid hsl(0, 4%, 82%);
     height: 3rem;
     color: black;
+    width: 10%;
 }
 
 .center p {
@@ -719,7 +840,7 @@ footer {
 }
 
 .footer-header-size-container {
-    height: 20rem;
+    height: 20 rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -727,7 +848,7 @@ footer {
 
 .footer-header-container {
     display: flex;
-    height: 10rem;
+    height: 20rem;
     width: 70%;
 }
 
